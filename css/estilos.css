@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Adicionei para melhor controle da caixa de conteúdo */
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px; /* Para dar espaçamento entre colunas */
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.div-logo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.perfil {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.rosto {
+    border-radius: 50%; /* Mais intuitivo para imagens circulares */
+    width: 120px;
+    height: 120px;
+}
+
+.images {
+    margin-top: 30px;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.celulares {
+    width: 100%; /* Para tornar a imagem responsiva */
+    max-width: 600px;
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.botao-continue {
+    background-color: #1399e5;
+    border: 1px solid #1399e5;
+    width: 250px;
+    height: 40px; /* Aumentei para melhorar a experiência */
+    margin: 30px auto;
+    color: white;
+    font-size: 16px; /* Aumentei o tamanho da fonte */
+    cursor: pointer;
+    border-radius: 5px; /* Adicionei bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave ao hover */
+}
+
+.botao-continue:hover {
+    background-color: #117ec2; /* Efeito hover */
+}
+
+.continuar {
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    max-width: 550px;
+    border: 2px solid #ececec;
+    padding: 20px; /* Melhor espaçamento interno */
+}
+
+.link {
+    color: #1399e5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    text-decoration: underline; /* Adicionei hover para links */
+}
+
+.inscreva {
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 550px;
+    background-color: white;
+    padding: 10px 0;
+    border: 2px solid #ececec;
+}
+
+.texto {
+    color: #b9b9bc;
+}
+
+.baixar {
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.play {
+    display: flex;
+    justify-content: center;
+}
+
+.disponivel {
+    width: 200px;
+    height: auto; /* Para manter a proporção */
+    margin-left: 10px;
+}
+
+@media (max-width: 912px) {
+    .images {
+        display: none;
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* Layout em uma única coluna */
+        margin: 0 auto;
+    }
+
+    .login {
+        margin-top: 100px;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center; /* Centraliza o conteúdo */
+    }
+}
